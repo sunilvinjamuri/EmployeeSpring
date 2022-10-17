@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml.com" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Add Data</title>
+</head>
+<body>
+<form action="#" th:action="@{/save}" th:object="${springemployee}" method = "post">
+Id <input type ="text" th:field = "*{id}"/><br>
+Name <input type ="text" th:field = "*{name}"/><br>
+Salary <input type ="text" th:field = "*{salary}"/><br>
+<button type = "submit">Add</button>
+</form>
+</body>
+</html>
